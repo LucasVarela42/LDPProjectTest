@@ -7,7 +7,7 @@ package br.com.ifsc.projecttest.view;
 
 /**
  *
- * @author Aluno
+ * @author Lucas Varela
  */
 public class JFramePrincipal extends javax.swing.JFrame {
 
