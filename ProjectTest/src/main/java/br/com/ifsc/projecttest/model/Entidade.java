@@ -1,7 +1,7 @@
 package br.com.ifsc.projecttest.model;
 
 import java.time.LocalDate;
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 /**
@@ -13,7 +13,7 @@ public abstract class Entidade {
 
     private int id;
     private String nome;
-    private LocalDate dataCadastro;
+    private LocalDateTime data_cadastro;
 
     public int getId() {
         return id;
