@@ -1,4 +1,4 @@
-package br.com.ifsc.projecttest.model;
+package br.com.ifsc.projecttest.model.abstracts;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
