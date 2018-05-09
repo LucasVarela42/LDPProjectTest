@@ -9,7 +9,7 @@ package br.com.ifsc.projecttest.model.interfaces;
  *
  * @author Aluno
  */
-public interface InterfaceExemplo {
+public interface InterfaceExemplo{
     void helloWorld();
     int soma(int a, int b);
 }
