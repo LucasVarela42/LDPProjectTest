@@ -6,30 +6,13 @@
 package br.com.ifsc.projecttest.model;
 
 import br.com.ifsc.projecttest.model.abstracts.Animal;
-import br.com.ifsc.projecttest.model.interfaces.InterfaceRun;
 import br.com.ifsc.projecttest.model.interfaces.InterfaceSwim;
-import br.com.ifsc.projecttest.model.interfaces.InterfaceWalk;
 
 /**
  *
  * @author Aluno
  */
-public class Penguim extends Animal implements InterfaceSwim, InterfaceRun, InterfaceWalk {
-
-    @Override
-    public void swim() {
-        System.out.println("Swimming...");
-    }
-
-    @Override
-    public void run() {
-        System.out.println("Running...");
-    }
-
-    @Override
-    public void walk() {
-        System.out.println("Walking...");
-    }
+public class Shark extends Animal implements InterfaceSwim {
 
     @Override
     public void born() {
@@ -42,7 +25,12 @@ public class Penguim extends Animal implements InterfaceSwim, InterfaceRun, Inte
     }
 
     @Override
-    public String getSpecies() {
-        return "PENGUIM";
+    public void swim() {
+        System.out.println("Swimming...");
     }
+
+    @Override
+    public String getSpecies() {
+        return "SHARK";
+    }    
 }

@@ -6,26 +6,14 @@
 package br.com.ifsc.projecttest.model;
 
 import br.com.ifsc.projecttest.model.abstracts.Animal;
-import br.com.ifsc.projecttest.model.interfaces.InterfaceFly;
 import br.com.ifsc.projecttest.model.interfaces.InterfaceRun;
-import br.com.ifsc.projecttest.model.interfaces.InterfaceSwim;
 import br.com.ifsc.projecttest.model.interfaces.InterfaceWalk;
 
 /**
  *
- * @author Aluno
+ * @author Vinicius
  */
-public class Duck extends Animal implements InterfaceFly, InterfaceSwim, InterfaceWalk, InterfaceRun {
-
-    @Override
-    public void swim() {
-        System.out.println("Swimming...");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Flying...");
-    }
+public class Monkey extends Animal implements InterfaceRun, InterfaceWalk {
 
     @Override
     public void walk() {
@@ -49,6 +37,6 @@ public class Duck extends Animal implements InterfaceFly, InterfaceSwim, Interfa
 
     @Override
     public String getSpecies() {
-        return "DUCK";
+        return "MONKEY";
     }
 }

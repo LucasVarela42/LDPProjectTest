@@ -6,7 +6,7 @@
 package br.com.ifsc.projecttest.model;
 
 import br.com.ifsc.projecttest.model.abstracts.Animal;
-import br.com.ifsc.projecttest.model.interfaces.InterfaceFly;
+import br.com.ifsc.projecttest.model.interfaces.InterfaceBark;
 import br.com.ifsc.projecttest.model.interfaces.InterfaceRun;
 import br.com.ifsc.projecttest.model.interfaces.InterfaceSwim;
 import br.com.ifsc.projecttest.model.interfaces.InterfaceWalk;
@@ -15,27 +15,7 @@ import br.com.ifsc.projecttest.model.interfaces.InterfaceWalk;
  *
  * @author Aluno
  */
-public class Duck extends Animal implements InterfaceFly, InterfaceSwim, InterfaceWalk, InterfaceRun {
-
-    @Override
-    public void swim() {
-        System.out.println("Swimming...");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Flying...");
-    }
-
-    @Override
-    public void walk() {
-        System.out.println("Walking...");
-    }
-
-    @Override
-    public void run() {
-        System.out.println("Running...");
-    }
+public class Dog extends Animal implements InterfaceWalk, InterfaceBark, InterfaceRun, InterfaceSwim {
 
     @Override
     public void born() {
@@ -48,7 +28,27 @@ public class Duck extends Animal implements InterfaceFly, InterfaceSwim, Interfa
     }
 
     @Override
+    public void walk() {
+        System.out.println("Walking...");
+    }
+
+    @Override
+    public void Bark() {
+        System.out.println("Barking...");
+    }
+
+    @Override
+    public void run() {
+        System.out.println("Running...");
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Swimming...");
+    }
+
+    @Override
     public String getSpecies() {
-        return "DUCK";
+        return "DOG";
     }
 }
